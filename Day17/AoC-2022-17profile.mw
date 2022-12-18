@@ -316,7 +316,6 @@ end do;
 to currh+1 do
 #next move one if not blocked;
 
-blockedv(pos, currock, currh, rows);
 if blockedv(pos, currock, currh, rows) then # blocked
     hc := height(currock);
     wc := width(currock);
@@ -358,31 +357,174 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L35" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#trace(simulate);
-res:=CodeTools:-Usage( simulate(10^7) );</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CodeTools:-Profiling:-Profile(simulate);
+CodeTools:-Profiling:-Profile(blockedv);
+CodeTools:-Profiling:-Profile(blockedr);
+CodeTools:-Profiling:-Profile(blockedl);
+res:=CodeTools:-Usage( simulate(10^5) );</Text-field>
 </Input>
 <Output><Text-field style="Line Printed Output" layout="Line Printed Output">.......
 .......
-....#..
-....#..
-..###.#
-.####.#
-###.###
+.###...
+.###...
+.#.#...
+.#.#.#.
+.######
 .#####.
 
 </Text-field>
 </Output>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbW5HRiQ2JFEpMTAwMDAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUSgmY29tbWE7RidGLy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y4LyUqc3ltbWV0cmljR0Y4LyUobGFyZ2VvcEdGOC8lLm1vdmFibGVsaW1pdHNHRjgvJSdhY2NlbnRHRjgvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYkUSMxMUYnRi9GMi1JI21zR0YkNiNRIm9GJ0Yv">NiUiKSsrKzUiIzZRIm82Ig==</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbW5HRiQ2JFEnMTAwMDAwRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLUkjbW9HRiQ2LVEoJmNvbW1hO0YnRi8vJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHUSV0cnVlRicvJSlzdHJldGNoeUdGOC8lKnN5bW1ldHJpY0dGOC8lKGxhcmdlb3BHRjgvJS5tb3ZhYmxlbGltaXRzR0Y4LyUnYWNjZW50R0Y4LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRiw2JFEjMjJGJ0YvRjItSSNtc0dGJDYjUSJvRidGLw==">NiUiJysrNSIjQVEibzYi</Equation></Text-field>
 </Output>
-<Output><Text-field style="Line Printed Output" layout="Line Printed Output">memory used=251.42GiB, alloc change=0 bytes, cpu time=43.47m, real time=47.20m, gc time=7.43m
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">memory used=2.51GiB, alloc change=-8.00MiB, cpu time=60.81s, real time=60.55s, gc time=5.55s
 </Text-field>
 </Output>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEkcmVzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JI21uR0YkNiRRKTE1MTQyODYxRidGOUY5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSRyZXNHRigiKWhHOTo3I0Yu</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEkcmVzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JI21uR0YkNiRRJzE1MTQzNEYnRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSRyZXNHRigiJ005OjcjRi4=</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L41" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#tracelast;</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CodeTools:-Profiling:-PrintProfiles();</Text-field>
 </Input>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">blockedl
+blockedl := proc(pos, s, h, rows, $)
+local i;
+     |Calls Seconds  Words|
+PROC |271425   4.210 21962745|
+   1 |271425   0.827 1525692| if pos[1] &lt;= 1 then
+   2 |34286   0.062      0|     return true
+                            elif h &lt; pos[2] then
+   3 |179995   0.234      0|     return false
+                            end if;
+   4 |57144   2.823 19211391| if add(shape[s][i,1]*rows[(pos[2]+height(s)-i
+                              -1 mod kk)+1,pos[1]-1],i = 1 .. height(s
+                              )) = 0 then
+   5 |48572   0.264 1225662|     if s &lt;&gt; &quot;+&quot; or add(shape[s][i,2]*rows[(
+                                  pos[2]+height(s)-i-1 mod kk)+1,pos[1
+                                  ]],i = 1 .. height(s)) = 0 then
+   6 |45715   0.000      0|         return false
+                                else
+   7 | 2857   0.000      0|         return true
+                                end if
+                            else
+   8 | 8572   0.000      0|     return true
+                            end if
+end proc
+
+blockedr
+blockedr := proc(pos, s, h, rows, $)
+local i;
+     |Calls Seconds  Words|
+PROC |299996  13.417 104457927|
+   1 |299996   4.075 27205839| if 0 &lt;= pos[1]+width(s)-8 then
+   2 |31429   0.062      0|     return true
+                            elif h &lt; pos[2] then
+   3 |180004   0.156      0|     return false
+                            end if;
+   4 |88563   8.623 74663658| if add(shape[s][i,-1]*rows[(pos[2]+height(s)-
+                              i-1 mod kk)+1][pos[1]+width(s)],i = 1 ..
+                              height(s)) = 0 then
+   5 |59993   0.378 2588430|     if s &lt;&gt; &quot;+&quot; or add(shape[s][i,-2]*rows[(
+                                  pos[2]+height(s)-i-1 mod kk)+1][pos[
+                                  1]+width(s)-1],i = 1 .. height(s)) =
+                                  0 then
+   6 |59993   0.077      0|         return false
+                                else
+   7 |    0   0.000      0|         return true
+                                end if
+                            else
+   8 |28570   0.046      0|     return true
+                            end if
+end proc
+
+blockedv
+blockedv := proc(pos, s, h, rows, $)
+     |Calls Seconds  Words|
+PROC |542842  15.862 125764533|
+   1 |542842   1.025 3257046| if pos[2] = 1 then
+   2 |    2   0.000      0|     return true
+                            elif h+1 &lt; pos[2] then
+   3 |    0   0.000      0|     return false
+                            end if;
+   4 |542840  12.569 114176893| if add(shape[s][-1] *~ rows[(pos[2]-2 mod kk)
+                              +1,pos[1] .. pos[1]+width(s)-1]) = 0 then
+   5 |354270   1.628 8330594|     if not s = &quot;+&quot; or add(shape[s][-2] *~ 
+                                  rows[(pos[2]-1 mod kk)+1,pos[1] .. 
+                                  pos[1]+width(s)-1]) = 0 then
+   6 |342842   0.438      0|         return false
+                                else
+   7 |11428   0.000      0|         return true
+                                end if
+                            else
+   8 |188570   0.202      0|     return true
+                            end if
+end proc
+
+simulate
+simulate := proc(N)
+local rows, currh, currock, windtick, pos, hc, wc, i, newrow, j, k, l, rsize;
+global kk;
+     |Calls Seconds  Words|
+PROC |    2  92.230 422727675|
+   1 |    2   0.000   2067| rows := Matrix(kk,7,0);
+   2 |    2   0.000      0| rsize := 0;
+   3 |    2   0.000      0| currh := 0;
+   4 |    2   0.000      0| windtick := 1;
+   5 |    2   0.000      0| to 4 do
+   6 |    8   0.000      0|     rsize := rsize+1;
+   7 |    8   0.000      0|     for k to 7 do
+   8 |   56   0.000    504|         rows[(rsize-1 mod kk)+1,k] := 0
+                                end do
+                            end do;
+   9 |    2   1.657      0| for k to N do
+  10 |200000   1.397 1508610|     while rsize &lt; currh+5 do
+  11 |302870   0.329      0|         rsize := rsize+1;
+  12 |302870   3.631      0|         for l to 7 do
+  13 |2120090   4.692 19081062|             rows[(rsize-1 mod kk)+1,l] := 0
+                                    end do
+                                end do;
+  14 |200000   0.409 1000000|     pos := [3, currh+5];
+  15 |200000   0.437 600000|     currock := rocks[(k-1 mod 5)+1];
+  16 |200000   5.163      7|     to 4 do
+  17 |800000   1.437 4000000|         pos := [pos[1], pos[2]-1];
+  18 |800000   1.579 1600518|         windpattern[windtick];
+  19 |800000   9.681 65927118|         pos := windpos(pos,currock,windtick,currh,
+                                      rows);
+  20 |800000   1.626 2400000|         windtick := (windtick mod m)+1
+                                end do;
+  21 |200000   3.712      7|     to currh+1 do
+  22 |542842  10.426 71024743|         blockedv(pos,currock,currh,rows);
+  23 |542842  10.909 71025002|         if blockedv(pos,currock,currh,rows) then
+  24 |200000   3.055 17001789|             hc := height(currock);
+  25 |200000   2.640 17001036|             wc := width(currock);
+  26 |200000   1.335      0|             for i from pos[2] to pos[2]+hc-1 do
+  27 |520000   2.741      0|                 for j from pos[1] to pos[1]+wc-1 do
+  28 |1200000   5.402 20400777|                     rows[(i-1 mod kk)+1,j] := max(
+                                                  rows[(i-1 mod kk)+1,j],shape
+                                                  [currock][hc-i+pos[2],j-pos[
+                                                  1]+1])
+                                            end do
+                                        end do;
+  29 |200000   0.358      0|             currh := max(currh,pos[2]+hc-1);
+  30 |200000   0.203      0|             break
+                                    end if;
+  31 |342842   0.964 1714561|         pos := [pos[1], pos[2]-1];
+  32 |342842  17.322 126783894|         pos := windpos(pos,currock,windtick,currh,
+                                      rows);
+  33 |342842   0.906 1028526|         windtick := (windtick mod m)+1
+                                end do;
+  34 |200000   0.219 600000|     if windtick = 1 then
+  35 |    0   0.000      0|         printchamber(rows,max(1,currh-5),currh+2);
+  36 |    0   0.000      0|         print(k,windtick,currock);
+  37 |    0   0.000      0|         return k, currh
+                                end if
+                            end do;
+  38 |    2   0.000   4678| printchamber(rows,max(1,currh-5),currh+2);
+  39 |    2   0.000  22776| print(k-1,windtick,currock);
+  40 |    2   0.000      0| return currh
+end proc
+
+</Text-field>
+</Output>
 </Group>
 <Group labelreference="L42" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
