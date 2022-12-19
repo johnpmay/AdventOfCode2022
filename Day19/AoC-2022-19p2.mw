@@ -123,6 +123,16 @@ Blueprint 2: Each ore robot costs 2 ore. Each clay robot costs 3 ore. Each obsid
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVErYmx1ZXByaW50c0YnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2am4tRlA2Ji1GIzYyLUkjbW5HRiQ2JFEiMUYnRjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GWTYkUSIyRidGOUZmbi1GWTYkUSI0RidGOUZmbkZhb0Zmbi1GWTYkUSMyMEYnRjlGZm4tRlk2JFEiM0YnRjlGZm4tRlk2JFEjMTRGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGZm4tRlA2Ji1GIzYyRl5vRmZuRmdvRmZuRmdvRmZuRl5vRmZuRmRvRmZuRl5vRmZuRmRvRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjJGZ29GZm5GZ29GZm5GZ29GZm5GZ29GZm4tRlk2JFEjMTZGJ0Y5RmZuRmdvRmZuLUZZNiRRIjlGJ0Y5Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjJGYW9GZm5GZ29GZm5GYW9GZm5GXm9GZm4tRlk2JFEjMTVGJ0Y5RmZuRl5vRmZuLUZZNiRRIzEzRidGOUZdcEZgcEY5RjlGYnBGZXBGZm4tRlA2Ji1GIzYyLUZZNiRRIjVGJ0Y5RmZuRl5vRmZuRmFvRmZuRmFvRmZuRmBxRmZuRmdvRmZuRl1yRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEiNkYnRjlGZm5GZ29GZm5GYW9GZm5GXm9GZm5Gam9GZm5GZ29GZm5Gam9GXXBGYHBGOUY5RmJwRmVwRmZuLUZQNiYtRiM2Mi1GWTYkUSI3RidGOUZmbkZnb0ZmbkZhb0ZmbkZhb0ZmbkZbc0ZmbkZeb0ZmbkZkb0ZdcEZgcEY5RjlGYnBGZXBGZm4tRlA2Ji1GIzYyLUZZNiRRIjhGJ0Y5RmZuRmdvRmZuRmFvRmZuRmFvRmZuRmRyRmZuRmFvRmZuRmlzRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjJGY3FGZm5GZ29GZm5GYW9GZm5GZ29GZm4tRlk2JFEjMTlGJ0Y5RmZuRmdvRmZuRmlzRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMTBGJ0Y5RmZuRl5vRmZuRmdvRmZuRl5vRmZuRmpvRmZuRmdvRmZuRmlzRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMTFGJ0Y5RmZuRl5vRmZuRmFvRmZuRmdvRmZuRmB0RmZuRmFvRmZuRl1yRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMTJGJ0Y5RmZuRl5vRmZuRmFvRmZuRmFvRmZuRmRvRmZuRmFvRmZuLUZZNiRRIzE4RidGOUZdcEZgcEY5RjlGYnBGZXBGZm4tRlA2Ji1GIzYyRl1yRmZuRmFvRmZuRmFvRmZuRl5vRmZuRmBxRmZuRmFvRmZuRmBxRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjJGam9GZm5GXm9GZm5GYW9GZm5GZ29GZm5GZG9GZm5GXm9GZm5GYHFGXXBGYHBGOUY5RmJwRmVwRmZuLUZQNiYtRiM2MkZqcUZmbkZhb0ZmbkZhb0ZmbkZnb0ZmbkZedUZmbkZnb0ZmbkZpc0ZdcEZgcEY5RjlGYnBGZXBGZm4tRlA2Ji1GIzYyRmBxRmZuRmFvRmZuRmdvRmZuRmFvRmZuRmB0RmZuRmFvRmZuRmV1Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMTdGJ0Y5RmZuRl5vRmZuRmFvRmZuRl5vRmZuRmRvRmZuRmdvRmZuRmpxRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjJGaHVGZm5GYW9GZm5GYW9GZm5GYW9GZm5GanFGZm5GYW9GZm5GZG9GXXBGYHBGOUY5RmJwRmVwRmZuLUZQNiYtRiM2MkZgdEZmbkZhb0ZmbkZnb0ZmbkZhb0ZmbkZqcUZmbkZhb0ZmbkZjcUZdcEZgcEY5RjlGYnBGZXBGZm4tRlA2Ji1GIzYyRmRvRmZuRmdvRmZuRmdvRmZuRl5vRmZuRmJzRmZuRl5vRmZuRmNxRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjFGJ0Y5RmZuRl5vRmZuRmdvRmZuRmdvRmZuRmpvRmZuRmdvRmZuRmB0Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjJGJ0Y5RmZuRmFvRmZuRmdvRmZuRmdvRmZuRl93RmZuRmdvRmZuRl1yRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjNGJ0Y5RmZuRmdvRmZuRmFvRmZuRmdvRmZuRmh1RmZuRmFvRmZuRmB0Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjRGJ0Y5RmZuRmdvRmZuRmdvRmZuRmdvRmZuRl93RmZuRl5vRmZuRl1yRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjVGJ0Y5RmZuRmFvRmZuRmFvRmZuRl5vRmZuRmpxRmZuRmdvRmZuRmBxRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjZGJ0Y5RmZuRmFvRmZuRmdvRmZuRmdvRmZuRmpxRmZuRl5vRmZuRl1yRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjdGJ0Y5RmZuRmFvRmZuRmFvRmZuRmFvRmZuRmh1RmZuRmFvRmZuRmNxRl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjhGJ0Y5RmZuRmFvRmZuRmFvRmZuRmFvRmZuRmJzRmZuRl5vRmZuRmB0Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMjlGJ0Y5RmZuRmFvRmZuRmFvRmZuRmFvRmZuRmpxRmZuRmFvRmZuRl93Rl1wRmBwRjlGOUZicEZlcEZmbi1GUDYmLUYjNjItRlk2JFEjMzBGJ0Y5RmZuRmFvRmZuRmFvRmZuRmFvRmZuRmNxRmZuRmFvRmZuRmBxRl1wRmBwRjlGOUZicEZlcEZdcEZgcEY5RjlGYnBGZXBGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SStibHVlcHJpbnRzR0YoN0A3KSIiIiIiIyIiJUYyIiM/IiIkIiM5NylGMUY0RjRGMUYzRjFGMzcpRjRGNEY0RjQiIztGNCIiKjcpRjJGNEYyRjEiIzpGMSIjODcpIiImRjFGMkYyRjhGNEY8NykiIidGNEYyRjFGNUY0RjU3KSIiKEY0RjJGMkZARjFGMzcpIiIpRjRGMkYyRj5GMkZENylGOUY0RjJGNCIjPkY0RkQ3KSIjNUYxRjRGMUY1RjRGRDcpIiM2RjFGMkY0RkZGMkY8NykiIzdGMUYyRjJGM0YyIiM9NylGPEYyRjJGMUY4RjJGODcpRjVGMUYyRjRGM0YxRjg3KUY7RjJGMkY0RkpGNEZENylGOEYyRjRGMkZGRjJGTDcpIiM8RjFGMkYxRjNGNEY7NylGTUYyRjJGMkY7RjJGMzcpRkZGMkY0RjJGO0YyRjk3KUYzRjRGNEYxRkJGMUY5NykiI0BGMUY0RjRGNUY0RkY3KSIjQUYyRjRGNEZTRjRGPDcpIiNCRjRGMkY0Rk1GMkZGNykiI0NGNEY0RjRGU0YxRjw3KSIjREYyRjJGMUY7RjRGODcpIiNFRjJGNEY0RjtGMUY8NykiI0ZGMkYyRjJGTUYyRjk3KSIjR0YyRjJGMkZCRjFGRjcpIiNIRjJGMkYyRjtGMkZTNykiI0lGMkYyRjJGOUYyRjg3I0Yu</Equation></Text-field>
 </Output>
 </Group>
+<Group labelreference="L39" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L40" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">blueprints[1..3];</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDYqLUYjNiYtRiw2Mi1JI21uR0YkNiRRIjFGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUSIsRidGNi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y/LyUqc3ltbWV0cmljR0Y/LyUobGFyZ2VvcEdGPy8lLm1vdmFibGVsaW1pdHNHRj8vJSdhY2NlbnRHRj8vJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMzYkUSIyRidGNkY5LUYzNiRRIjRGJ0Y2RjlGVkY5LUYzNiRRIzIwRidGNkY5LUYzNiRRIjNGJ0Y2RjktRjM2JFEjMTRGJ0Y2LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y/RjZGNi8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOS1GIzYmLUYsNjJGU0Y5RmZuRjlGZm5GOUZTRjlGWUY5RlNGOUZZRlxvRl9vRjZGNkZhb0Zkb0Y5LUYjNiYtRiw2MkZmbkY5RmZuRjlGZm5GOUZmbkY5LUYzNiRRIzE2RidGNkY5RmZuRjktRjM2JFEiOUYnRjZGXG9GX29GNkY2RmFvRmRvRlxvRl9vRjZGNkZhb0Zkbw==">NyU3KSIiIiIiIyIiJUYmIiM/IiIkIiM5NylGJUYoRihGJUYnRiVGJzcpRihGKEYoRigiIztGKCIiKg==</Equation></Text-field>
+</Output>
+</Group>
 <Group hide-input="false" labelreference="L16" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"># start state
 start := [1,0,0,0,0,0,0,0]; # rcbg robots, rcbg quanity, time</Text-field>
@@ -132,20 +142,23 @@ start := [1,0,0,0,0,0,0,0]; # rcbg robots, rcbg quanity, time</Text-field>
 </Group>
 <Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">nbs := proc(state, bpn)
-option remember;local i, newores := seq(state[i]+state[i+4], i=1..4); # all nb increase ore    
-local out;
+option cache;
 local bp := blueprints[bpn];
+local i, newores := seq(state[i]+state[i+4], i=1..4); # all nb increase ore    
+local out;
+
     out := NULL;   
 
     if (state[5]&gt;=bp[6] and state[7]&gt;=bp[7]) then # build geode bot
         out := [state[1], state[2], state[3], state[4]+1, newores[1]-bp[6], newores[2], newores[3]-bp[7], newores[4]];
-    elif (state[5]&gt;=bp[4] and state[6]&gt;=bp[5]) then # build obsian bot        out := [state[1..4][], newores], [state[1], state[2], state[3]+1, state[4], newores[1]-bp[4], newores[2]-bp[5],newores[3..-1]];    else
+    elif (state[5]&gt;=bp[4] and state[6]&gt;=bp[5]) then # build obsian bot
+        out := [state[1..4][], newores], [state[1], state[2], state[3]+1, state[4], newores[1]-bp[4], newores[2]-bp[5],newores[3..-1]];
+    else
         out :=  [state[1..4][], newores], # don't build
           ifelse(state[5]&gt;=bp[2], # build ore -  and state[1] &lt;= ceil((bp[4]+bp[6])/4)
             [state[1]+1, state[2..4][], newores[1]-bp[2], newores[2..-1]], NULL),
           ifelse(state[5]&gt;=bp[3] , # build clay - and state[2] &lt;= ceil(bp[5]/4)
-            [state[1], state[2]+1, state[3..4][], newores[1]-bp[3], newores[2..-1]], NULL); 
-          
+            [state[1], state[2]+1, state[3..4][], newores[1]-bp[3], newores[2..-1]], NULL);           
       
      end if;  
 
@@ -155,89 +168,146 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L15" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"> nbs([1,0,0,0,3,14,0,0],1);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"> nbs([1,0,0,0,3,0,0,0],2);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDYoLUYjNiYtRiw2NC1JI21uR0YkNiRRIjFGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUSIsRidGNi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y/LyUqc3ltbWV0cmljR0Y/LyUobGFyZ2VvcEdGPy8lLm1vdmFibGVsaW1pdHNHRj8vJSdhY2NlbnRHRj8vJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMzYkUSIwRidGNkY5RlNGOUZTRjktRjM2JFEiNEYnRjZGOS1GMzYkUSMxNEYnRjZGOUZTRjlGUy8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGP0Y2RjYvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjktRiM2Ji1GLDY0LUYzNiRRIjJGJ0Y2RjlGU0Y5RlNGOUZTRjlGZW9GOUZZRjlGU0Y5RlNGZm5GaW5GNkY2RltvRl5vRmZuRmluRjZGNkZbb0Zebw==">NyQ3KiIiIiIiIUYlRiUiIiUiIzlGJUYlNyoiIiNGJUYlRiVGKUYnRiVGJQ==</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDYqLUYjNiYtRiw2NC1JI21uR0YkNiRRIjFGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUSIsRidGNi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y/LyUqc3ltbWV0cmljR0Y/LyUobGFyZ2VvcEdGPy8lLm1vdmFibGVsaW1pdHNHRj8vJSdhY2NlbnRHRj8vJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMzYkUSIwRidGNkY5RlNGOUZTRjktRjM2JFEiNEYnRjZGOUZTRjlGU0Y5RlMvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj9GNkY2LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJ0Y5LUYjNiYtRiw2NC1GMzYkUSIyRidGNkY5RlNGOUZTRjlGU0Y5RjJGOUZTRjlGU0Y5RlNGWUZmbkY2RjZGaG5GW29GOS1GIzYmLUYsNjRGMkY5RjJGOUZTRjlGU0Y5RjJGOUZTRjlGU0Y5RlNGWUZmbkY2RjZGaG5GW29GWUZmbkY2RjZGaG5GW28=">NyU3KiIiIiIiIUYlRiUiIiVGJUYlRiU3KiIiI0YlRiVGJUYkRiVGJUYlNypGJEYkRiVGJUYkRiVGJUYl</Equation></Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L17" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"># recursive BFS - too slow
-geodecount := proc(state, bpn, timeleft, $)
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"># recursive DFS - too slow
+
+geodecount := proc(state, bp, timeleft, $)
 local nxt;
-option remember;
+option cache;
 #option trace;
 
     if timeleft = 0 then
         return state[8];
     end if;
 
-    local nbhd := nbs(state, bpn);
-    local outs := map(thisproc, nbhd, bpn, timeleft-1);
+    local nbhd := nbs(state, bp);
+    local outs := map(thisproc, nbhd, bp, timeleft-1);
     
-    return max(outs);
+    return max(0,outs[]);
+
 end proc:</Text-field>
 </Input>
 </Group>
-<Group hide-input="false" labelreference="L23" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#CodeTools:-Usage( geodecount(start, blueprints[2], 24) );</Text-field>
-</Input>
-<Output><Text-field style="Line Printed Output" layout="Line Printed Output">memory used=5.30GiB, alloc change=1.78GiB, cpu time=2.26m, real time=73.68s, gc time=87.22s
-</Text-field>
-</Output>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEjMTJGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">IiM3</Equation></Text-field>
-</Output>
-</Group>
 <Group hide-input="false" labelreference="L18" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ans1 := CodeTools:-Usage( add(blueprints[i][1]*geodecount(start, i, 24), i=1..nops(blueprints)) );</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#geodecount(start, 2, 16);</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L19" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">quality := proc(state, bp)
-    return 10^7*state[8] + 10^5*state[4] + (bp[4]+bp[6])*(10^2*state[5]+state[1]) + bp[5]*(10^2*state[6]+state[2]) + bp[7]*(10^2*state[7]+state[3]); 
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">quality := proc(state, bpn)
+option cache;
+    return 10^8*state[8] + 10^6*state[4] + (blueprints[bpn][4]+blueprints[bpn][6])*(state[5]+state[1]) + blueprints[bpn][5]*(state[2]+state[6]) + 10^3*blueprints[bpn][7]*(state[3]+state[7]); 
 end proc;</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEocXVhbGl0eUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtRiM2Ky1GNjYvUSVwcm9jRicvJSVib2xkR0YxL0YzUSVib2xkRicvJStmb250d2VpZ2h0R0ZXRjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSShtZmVuY2VkR0YkNiQtRiM2KC1GLDYlUSZzdGF0ZUYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIRlovRk5RLDAuMzMzMzMzM2VtRictRiw2JVEjYnBGJ0YvRjIvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5LUknbXNwYWNlR0YkNiYvJSdoZWlnaHRHUSYwLjBleEYnLyUmd2lkdGhHUSYwLjVlbUYnLyUmZGVwdGhHRmJwLyUqbGluZWJyZWFrR1ExZmlyc3Rwcm9jbmV3bGluZUYnLUYjNigtRjY2L1EncmV0dXJuRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuLUZecDYmRmBwRmNwRmZwL0ZpcFElYXV0b0YnLUYjNiwtRiM2Ji1JI21uR0YkNiRRKTEwMDAwMDAwRidGOS1GNjYtUSIqRidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjE2NjY2NjdlbUYnL0ZORmByLUYjNilGXG8tRjY2LVEiW0YnRjkvRjxGMUY+L0ZBRjFGQkZERkZGSEZfckZhci1GIzYmLUZpcTYkUSI4RidGOUZob0ZbcEY5LUY2Ni1RIl1GJ0Y5RmdyRj5GaHJGQkZERkZGSEZfci9GTlEsMC4xMTExMTExZW1GJ0Zob0ZbcEY5RjktRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZncy1GIzYmLUZpcTYkUScxMDAwMDBGJ0Y5RlxyLUYjNilGXG9GZHItRiM2Ji1GaXE2JFEiNEYnRjlGaG9GW3BGOUZec0Zob0ZbcEY5RjlGY3MtRiM2Ji1GaG42JC1GIzYmLUYjNilGZW9GZHJGYHRGXnNGaG9GW3BGOUZjcy1GIzYpRmVvRmRyLUYjNiYtRmlxNiRRIjZGJ0Y5RmhvRltwRjlGXnNGaG9GW3BGOUY5RjlGXHItRmhuNiQtRiM2Ji1GIzYmLUZpcTYkUSQxMDBGJ0Y5RlxyLUYjNilGXG9GZHItRiM2Ji1GaXE2JFEiNUYnRjlGaG9GW3BGOUZec0Zob0ZbcEY5RjlGY3MtRiM2KUZcb0Zkci1GIzYmLUZpcTYkUSIxRidGOUZob0ZbcEY5Rl5zRmhvRltwRjlGOUY5RjlGY3MtRiM2Ji1GIzYpRmVvRmRyRl92Rl5zRmhvRltwRjlGXHItRmhuNiQtRiM2Ji1GIzYmRmp1RlxyLUYjNilGXG9GZHJGX3VGXnNGaG9GW3BGOUY5RmNzLUYjNilGXG9GZHItRiM2Ji1GaXE2JFEiMkYnRjlGaG9GW3BGOUZec0Zob0ZbcEY5RjlGOUY5RmNzLUYjNiYtRiM2KUZlb0Zkci1GIzYmLUZpcTYkUSI3RidGOUZob0ZbcEY5Rl5zRmhvRltwRjlGXHItRmhuNiQtRiM2Ji1GIzYmRmp1RlxyLUYjNilGXG9GZHJGYnhGXnNGaG9GW3BGOUY5RmNzLUYjNilGXG9GZHItRiM2Ji1GaXE2JFEiM0YnRjlGaG9GW3BGOUZec0Zob0ZbcEY5RjlGOUY5RjlGaG9GW3BGOS1GXnA2JkZgcEZjcEZmcC9GaXBRNmRlY3JlYXNlaW5kZW50bmV3bGluZUYnLUY2Ni9RKWVuZH5wcm9jRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuRmhvRltwRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SShxdWFsaXR5R0YoZio2JEkmc3RhdGVHRihJI2JwR0YoRihGKEYoTywsKiYiKSsrKzUiIiImRjA2IyIiKUY2RjYqJiInKys1RjYmRjA2IyIiJUY2RjYqJiwmJkYxRj1GNiZGMTYjIiInRjZGNiwmKiYiJCsiRjYmRjA2IyIiJkY2RjYmRjA2I0Y2RjZGNkY2KiYmRjFGSUY2LCYqJkZHRjYmRjBGQ0Y2RjYmRjA2IyIiI0Y2RjZGNiomJkYxNiMiIihGNiwmKiZGR0Y2JkYwRldGNkY2JkYwNiMiIiRGNkY2RjZGKEYoRig3I0Yu</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEocXVhbGl0eUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtRiM2LC1GNjYvUSVwcm9jRicvJSVib2xkR0YxL0YzUSVib2xkRicvJStmb250d2VpZ2h0R0ZXRjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GZW4tSShtZmVuY2VkR0YkNiQtRiM2KC1GLDYlUSZzdGF0ZUYnRi9GMi1GNjYtUSIsRidGOUY7L0Y/RjFGQEZCRkRGRkZIRlovRk5RLDAuMzMzMzMzM2VtRictRiw2JVEkYnBuRidGL0YyLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS1JJ21zcGFjZUdGJDYmLyUnaGVpZ2h0R1EmMC4wZXhGJy8lJndpZHRoR1EmMC41ZW1GJy8lJmRlcHRoR0ZicC8lKmxpbmVicmVha0dRMWZpcnN0cHJvY25ld2xpbmVGJy1GIzYqLUY2Ni9RJ29wdGlvbkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbi1GXnA2JkZgcEZjcEZmcC9GaXBRJWF1dG9GJy1GIzYmLUYsNiVRJmNhY2hlRidGL0YyRmhvRltwRjktRjY2LVEiO0YnRjlGO0Zib0ZARkJGREZGRkhGWkZNRl1wRmhvRltwRjktRiM2KC1GNjYvUSdyZXR1cm5GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GYHEtRiM2LC1GIzYmLUkjbW5HRiQ2JFEqMTAwMDAwMDAwRidGOS1GNjYtUSIqRidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjE2NjY2NjdlbUYnL0ZORl1zLUYjNilGXG8tRjY2LVEiW0YnRjkvRjxGMUY+L0ZBRjFGQkZERkZGSEZcc0Zecy1GIzYmLUZmcjYkUSI4RidGOUZob0ZbcEY5LUY2Ni1RIl1GJ0Y5RmRzRj5GZXNGQkZERkZGSEZccy9GTlEsMC4xMTExMTExZW1GJ0Zob0ZbcEY5RjktRjY2LVEiK0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJy9GTkZkdC1GIzYmLUZmcjYkUSgxMDAwMDAwRidGOUZpci1GIzYpRlxvRmFzLUYjNiYtRmZyNiRRIjRGJ0Y5RmhvRltwRjlGW3RGaG9GW3BGOUY5RmB0LUYjNiYtRmhuNiQtRiM2Ji1GIzYpLUYjNiktRiw2JVErYmx1ZXByaW50c0YnRi9GMkZhcy1GIzYmRmVvRmhvRltwRjlGW3RGaG9GW3BGOUZhc0ZddUZbdEZob0ZbcEY5RmB0LUYjNilGanVGYXMtRiM2Ji1GZnI2JFEiNkYnRjlGaG9GW3BGOUZbdEZob0ZbcEY5RjlGOUZpci1GaG42JC1GIzYmLUYjNilGXG9GYXMtRiM2Ji1GZnI2JFEiNUYnRjlGaG9GW3BGOUZbdEZob0ZbcEY5RmB0LUYjNilGXG9GYXMtRiM2Ji1GZnI2JFEiMUYnRjlGaG9GW3BGOUZbdEZob0ZbcEY5RjlGOUY5RmB0LUYjNiYtRiM2KUZqdUZhc0Zed0ZbdEZob0ZbcEY5RmlyLUZobjYkLUYjNiYtRiM2KUZcb0Zhcy1GIzYmLUZmcjYkUSIyRidGOUZob0ZbcEY5Rlt0RmhvRltwRjlGYHQtRiM2KUZcb0Zhc0ZjdkZbdEZob0ZbcEY5RjlGOUY5RmB0LUYjNigtRmZyNiRRJTEwMDBGJ0Y5RmlyLUYjNilGanVGYXMtRiM2Ji1GZnI2JFEiN0YnRjlGaG9GW3BGOUZbdEZob0ZbcEY5RmlyLUZobjYkLUYjNiYtRiM2KUZcb0Zhcy1GIzYmLUZmcjYkUSIzRidGOUZob0ZbcEY5Rlt0RmhvRltwRjlGYHQtRiM2KUZcb0Zhc0ZieUZbdEZob0ZbcEY5RjlGOUY5RjlGaG9GW3BGOS1GXnA2JkZgcEZjcEZmcC9GaXBRNmRlY3JlYXNlaW5kZW50bmV3bGluZUYnLUY2Ni9RKWVuZH5wcm9jRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuRmhvRltwRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SShxdWFsaXR5R0YoZio2JEkmc3RhdGVHRihJJGJwbkdGKEYoNiNJJmNhY2hlR0YoRihPLCwmOSQ2IyIiKSIqKysrKyImRjc2IyIiJSIoKysrIiomLCYmJkkrYmx1ZXByaW50c0dGKDYjOSVGPCIiIiZGQjYjIiInRkZGRiwmJkY3NiMiIiZGRiZGNzYjRkZGRkZGRkYqJiZGQkZMRkYsJiZGNzYjIiIjRkYmRjdGSEZGRkZGRiomJkZCNiMiIihGRiwmJkY3NiMiIiRGRiZGN0ZZRkZGRiIlKzVGKEYoRig3I0Yu</Equation></Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L20" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">quality(start, blueprints[1]);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">quality(s, 2);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEiNUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJw==">IiIm</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYyLUYjNiYtSSNtbkdGJDYkUSoxMDAwMDAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUTEmSW52aXNpYmxlVGltZXM7RidGMS8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGOi8lKXN0cmV0Y2h5R0Y6LyUqc3ltbWV0cmljR0Y6LyUobGFyZ2VvcEdGOi8lLm1vdmFibGVsaW1pdHNHRjovJSdhY2NlbnRHRjovJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZJLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEic0YnLyUnaXRhbGljR1EldHJ1ZUYnL0YyUSdpdGFsaWNGJy1GLjYkUSI4RidGMS8lL3N1YnNjcmlwdHNoaWZ0R1EiMEYnRjEtRjU2LVEnJnBsdXM7RidGMUY4RjtGPUY/RkFGQ0ZFL0ZIUSwwLjIyMjIyMjJlbUYnL0ZLRlxvLUYjNiYtRi42JFEoMTAwMDAwMEYnRjFGNC1GTTYlRk8tRi42JFEiNEYnRjFGZW5GMUZobi1GIzYmLUYuNiRRIjZGJ0YxRjQtRk02JUZPLUYuNiRRIjVGJ0YxRmVuRjFGaG4tRiM2JkZqb0Y0LUZNNiVGTy1GLjYkUSIxRidGMUZlbkYxRmhuLUYjNiZGWEY0LUZNNiVGTy1GLjYkUSIyRidGMUZlbkYxRmhuLUYjNiZGWEY0LUZNNiVGT0Zqb0ZlbkYxRmhuLUYjNiYtRi42JFEmMTIwMDBGJ0YxRjQtRk02JUZPLUYuNiRRIjNGJ0YxRmVuRjFGaG4tRiM2JkZmcUY0LUZNNiVGTy1GLjYkUSI3RidGMUZlbkYxRjE=">LDImSSJzRzYiNiMiIikiKisrKysiJkYkNiMiIiUiKCsrKyImRiQ2IyIiJiIiJyZGJDYjIiIiRjAmRiQ2IyIiI0YnJkYkNiNGMEYnJkYkNiMiIiQiJis/IiZGJDYjIiIoRjw=</Equation></Text-field>
 </Output>
 </Group>
+<Group hide-input="false" labelreference="L23" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L26" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
 <Group hide-input="false" labelreference="L21" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Search := proc(start, bp)
-local pq, costsofar, curr, nb, newcost, pt, dim; 
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">gsearch := proc(start, bp)
+local pq, timesofar, curr, nb, newcost, pt, dim; 
 uses priqueue;
 
-costsofar := table(sparse=infinity):
+timesofar := table(sparse=infinity):
 
 initialize(pq):
-insert([quality(start),start], pq):
-costsofar[start] := 0:
+insert([quality(start, bp),start], pq):
+timesofar[start] := 0:
+local bestsofar := 24;
 
+local best := NULL;
 while pq[0] &lt;&gt; 0 do
-   curr := extract(pq)[2];
-   if curr = theend then
-       return costsofar[theend];
+   curr := extract(pq);
+
+   curr := curr[2];
+   if curr[4] &gt;= 1 then
+       if timesofar[curr] &lt; bestsofar then
+          bestsofar := timesofar[curr];   
+          best := curr;
+       elif timesofar[curr] = bestsofar then
+          best := best, curr;
+       end if;
+       next; # don't explore all the way
    end if;
-   # climb at most one
-   nb := select(n-&gt;grid[n[]]&lt;=grid(curr[])+1, nbs(curr[], dim));
+
+   nb := nbs(curr,bp);
    for pt in nb do
-       newcost := costsofar[curr] + 1;
-       if newcost &lt; costsofar[pt] then
-           costsofar[pt] := newcost;
+       newcost := timesofar[curr] + 1;
+       if newcost &lt; timesofar[pt] and newcost &lt;= bestsofar then
+           timesofar[pt] := newcost;
            insert([-newcost,pt], pq);
        end if;
    end do;
+
+
 end do:
 
+return bestsofar, { best };
 end proc:</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkobWZlbmNlZEdGJDYmLUYjNjQtSSNtbkdGJDYkUSIxRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLUkjbW9HRiQ2LVEiLEYnRjQvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHUSV0cnVlRicvJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRjE2JFEiMEYnRjRGN0ZRRjdGUUY3RlFGN0ZRRjdGUUY3RlEvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GNEY0LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJy1GODYtUSgmY29tbWE7RidGNEY7Rj5GQUZDRkVGR0ZJRktGTi1GLDYmLUYjNjJGMEY3LUYxNiRRIjRGJ0Y0RjctRjE2JFEiMkYnRjRGNy1GMTYkUSIzRidGNEY3LUYxNiRRIzE0RidGNEY3RmNvRjctRjE2JFEiN0YnRjRGVEZXRjRGNEZZRmZuRjQ=">NiQ3KiIiIiIiIUYlRiVGJUYlRiVGJTcpRiQiIiUiIiMiIiQiIzlGKCIiKA==</Equation></Text-field>
+</Group>
+<Group hide-input="false" labelreference="L37" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"># trace(gsearch);
+ gsearch(start,1);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbW5HRiQ2JFEjMThGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictSSNtb0dGJDYtUSgmY29tbWE7RidGLy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y4LyUqc3ltbWV0cmljR0Y4LyUobGFyZ2VvcEdGOC8lLm1vdmFibGVsaW1pdHNHRjgvJSdhY2NlbnRHRjgvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1JKG1mZW5jZWRHRiQ2Ji1GIzZILUZNNiYtRiM2NC1GLDYkUSIxRidGLy1GMzYtUSIsRidGL0Y2RjlGPEY+RkBGQkZERkZGSS1GLDYkUSIzRidGL0ZYLUYsNiRRIjJGJ0YvRlhGVUZYLUYsNiRRIjRGJ0YvRlgtRiw2JFEjMTBGJ0YvRlhGaG5GWC1GLDYkUSIwRidGLy8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGOEYvRi8vJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRlgtRk02Ji1GIzY0RlVGWEZlbkZYRmhuRlhGVUZYRltvRlgtRiw2JFEjMTFGJ0YvRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWEZjcEZYRmhuRlhGYW9GZG9GZ29GL0YvRmlvRlxwRlgtRk02Ji1GIzY0RlVGWEZbb0ZYRmhuRlhGVUZYRmhuRlgtRiw2JFEjMTJGJ0YvRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWC1GLDYkUSMxM0YnRi9GWEZobkZYRmFvRmRvRmdvRi9GL0Zpb0ZccEZYLUZNNiYtRiM2NEZVRlhGW29GWEZobkZYRlVGWEZobkZYLUYsNiRRIzE0RidGL0ZYRmhuRlhGYW9GZG9GZ29GL0YvRmlvRlxwRlgtRk02Ji1GIzY0RlVGWEZbb0ZYRmhuRlhGVUZYRmhuRlgtRiw2JFEjMTVGJ0YvRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWC1GLDYkUSMxNkYnRi9GWEZobkZYRmFvRmRvRmdvRi9GL0Zpb0ZccEZYLUZNNiYtRiM2NEZVRlhGW29GWEZobkZYRlVGWEZobkZYRmpyRlhGZW5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWC1GLDYkUSMxN0YnRi9GWEZobkZYRmFvRmRvRmdvRi9GL0Zpb0ZccEZYLUZNNiYtRiM2NEZVRlhGW29GWEZobkZYRlVGWEZobkZYRmVzRlhGZW5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWEYrRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGVUZYRltvRlhGaG5GWEZVRlhGaG5GWC1GLDYkUSMxOUYnRi9GWEZobkZYRmFvRmRvRmdvRi9GL0Zpb0ZccEZYLUZNNiYtRiM2NEZVRlhGW29GWEZobkZYRlVGWEZobkZYLUYsNiRRIzIwRidGL0ZYRmhuRlhGYW9GZG9GZ29GL0YvRmlvRlxwRlgtRk02Ji1GIzY0RmhuRlhGZW5GWEZobkZYRlVGWEZbb0ZYRl5vRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGWC1GTTYmLUYjNjRGaG5GWEZlbkZYRmhuRlhGVUZYRltvRlhGY3BGWEZobkZYRmFvRmRvRmdvRi9GL0Zpb0ZccEZYLUZNNiYtRiM2NEZobkZYRltvRlhGaG5GWEZVRlhGaG5GWEZjcEZYRmhuRlhGYW9GZG9GZ29GL0YvRmlvRlxwRlgtRk02Ji1GIzY0RmhuRlhGW29GWEZobkZYRlVGWEZobkZYRl5xRlhGaG5GWEZhb0Zkb0Znb0YvRi9GaW9GXHBGZG9GZ29GL0YvL0Zqb1EnJmxjdWI7RicvRl1wUScmcmN1YjtGJ0Yv">NiQiIz08NDcqIiIiIiIkIiIjRiYiIiUiIzVGKCIiITcqRiZGJ0YoRiZGKSIjNkYoRis3KkYmRilGKEYmRihGLUYoRis3KkYmRilGKEYmRigiIzdGKEYrNypGJkYpRihGJkYoIiM4RihGKzcqRiZGKUYoRiZGKCIjOUYoRis3KkYmRilGKEYmRigiIzpGKEYrNypGJkYpRihGJkYoIiM7RihGKzcqRiZGKUYoRiZGKEY4RidGKzcqRiZGKUYoRiZGKCIjPEYoRis3KkYmRilGKEYmRihGO0YnRis3KkYmRilGKEYmRihGI0YoRis3KkYmRilGKEYmRigiIz5GKEYrNypGJkYpRihGJkYoIiM/RihGKzcqRihGJ0YoRiZGKUYqRihGKzcqRihGJ0YoRiZGKUYtRihGKzcqRihGKUYoRiZGKEYtRihGKzcqRihGKUYoRiZGKEYwRihGKw==</Equation></Text-field>
 </Output>
 </Group>
-<Group labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" labelreference="L32" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">fastgeocount := proc(bpn)
+local i, res := gsearch(start, bpn); 
+     if res[2] = [] then return 0;
+     end if;
+     local mres := max(map2(op,7,res[2]));
+     local res2 := select(i-&gt;i[7]=mres, res[2]);
+     return max( 0, seq( geodecount( res2[i], bpn, 24-res[1]), i=1..nops(res2)) );
+end proc;</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEtZmFzdGdlb2NvdW50RicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GIzYsLUY2Ni9RJXByb2NGJy8lJWJvbGRHRjEvRjNRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRldGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZlbi1JKG1mZW5jZWRHRiQ2JC1GIzYmLUYsNiVRJGJwbkYnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjktSSdtc3BhY2VHRiQ2Ji8lJ2hlaWdodEdRJjAuMGV4RicvJSZ3aWR0aEdRJjAuNWVtRicvJSZkZXB0aEdGaW8vJSpsaW5lYnJlYWtHUTFmaXJzdHByb2NuZXdsaW5lRictRiM2Ki1GNjYvUSZsb2NhbEYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbi1GZW82JkZnb0Zqb0ZdcC9GYHBRJWF1dG9GJy1GIzYsLUYsNiVRImlGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZaL0ZOUSwwLjMzMzMzMzNlbUYnLUYsNiVRJHJlc0YnRi9GMkZgcS1GLDYlUSVtcmVzRidGL0YyRmBxLUYsNiVRJXJlczJGJ0YvRjJGX29GYm9GOS1GNjYtUSI7RidGOUY7RmNxRkBGQkZERkZGSEZaRk1GZG9GX29GYm9GOS1GIzYqLUYjNigtRiM2KEZmcS1GNjYtUSp+JiM4Nzg4O35GJ0Y5RjtGPkZARkJGREZGRkhGWkZmbi1GIzYoLUYsNiVRKGdzZWFyY2hGJ0YvRjItRjY2LVEwJkFwcGx5RnVuY3Rpb247RidGOUY7Rj5GQEZCRkRGRkZIRlpGZm4tRmhuNiQtRiM2KC1GLDYlUSZzdGFydEYnRi9GMkZgcUZcb0Zfb0Zib0Y5RjlGX29GYm9GOUZfb0Zib0Y5Rl9yRmRvRl9vRmJvRjktRiM2KC1GIzYnLUYjNi0tRjY2L1EjaWZGJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GZ3AtRiM2KC1GIzYpRmZxLUY2Ni1RIltGJ0Y5L0Y8RjFGPi9GQUYxRkJGREZGRkgvRktRLDAuMTY2NjY2N2VtRicvRk5GXXUtRiM2Ji1JI21uR0YkNiRRIjJGJ0Y5Rl9vRmJvRjktRjY2LVEiXUYnRjlGanRGPkZbdUZCRkRGRkZIRlx1L0ZOUSwwLjExMTExMTFlbUYnRl9vRmJvRjktRjY2LVEiPUYnRjlGO0Y+RkBGQkZERkZGSEZKRk0tRmhuNiYtRiM2Ji1GLDYlUSFGJ0YvRjJGX29GYm9GOUY5LyUlb3BlbkdGaXQvJSZjbG9zZUdGZ3VGX29GYm9GOUZncC1GNjYvUSV0aGVuRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuLUZlbzYmRmdvRmpvRl1wL0ZgcFE2aW5jcmVhc2VpbmRlbnRuZXdsaW5lRictRiM2KC1GNjYvUSdyZXR1cm5GJ0ZURlZGWEY7Rj5GQEZCRkRGRkZIRlpGZm5GZ3AtRmJ1NiRRIjBGJ0Y5Rl9vRmJvRjktRmVvNiZGZ29Gam9GXXAvRmBwUTZkZWNyZWFzZWluZGVudG5ld2xpbmVGJ0Zfb0Zib0Y5LUY2Ni9RJ2VuZH5pZkYnRlRGVkZYRjtGPkZARkJGREZGRkhGWkZmbkZfb0Zib0Y5Rl9yRmRvRl9vRmJvRjktRiM2KC1GIzYoRmlxRmhyLUYjNigtRiw2JVEkbWF4RicvRjBGPUY5RmBzLUZobjYkLUYjNiYtRiM2KC1GLDYlUSVtYXAyRidGL0YyRmBzLUZobjYkLUYjNiotRiw2JVEjb3BGJ0YvRjJGYHEtRmJ1NiRRIjdGJ0Y5RmBxRmV0Rl9vRmJvRjlGOUZfb0Zib0Y5Rl9vRmJvRjlGOUZfb0Zib0Y5Rl9vRmJvRjlGX3JGZG9GX29GYm9GOS1GIzYoLUYjNihGXHJGaHItRiM2KC1GLDYlUSdzZWxlY3RGJ0YvRjJGYHMtRmhuNiQtRiM2KC1GIzYoRl1xLUY2Ni1RKCYjODU5NDtGJ0Y5RjtGPkZARkJGREZGRkhGWkZmbi1GIzYoLUYjNilGXXFGZ3QtRiM2JkZoeUZfb0Zib0Y5RmV1Rl9vRmJvRjlGanVGaXFGX29GYm9GOUZfb0Zib0Y5RmBxRmV0Rl9vRmJvRjlGOUZfb0Zib0Y5Rl9vRmJvRjlGX3JGZG9GX29GYm9GOS1GIzYoRmF3RmdwLUYjNihGZHhGYHMtRmhuNiQtRiM2KEZkd0ZgcS1GIzYoLUYsNiVRJHNlcUYnRi9GMkZgcy1GaG42JC1GIzYoLUYjNigtRiw2JVErZ2VvZGVjb3VudEYnRi9GMkZgcy1GaG42JC1GIzYqLUYjNilGXHJGZ3QtRiM2JkZdcUZfb0Zib0Y5RmV1Rl9vRmJvRjlGYHFGXG9GYHEtRiM2Ji1GYnU2JFEjMjRGJ0Y5LUY2Ni1RKn4mIzg3MjI7fkYnRjlGO0Y+RkBGQkZERkZGSEZaRmZuLUYjNilGZnFGZ3QtRiM2Ji1GYnU2JFEiMUYnRjlGX29GYm9GOUZldUZfb0Zib0Y5RjlGX29GYm9GOUY5Rl9vRmJvRjlGYHEtRiM2KEZdcUZqdS1GIzYoRl1ebC1GNjYtUSMuLkYnRjlGO0Y+RkBGQkZERkZGSC9GS1EsMC4yMjIyMjIyZW1GJ0Zmbi1GIzYoLUYsNiVRJW5vcHNGJ0YvRjJGYHMtRmhuNiQtRiM2JkZcckZfb0Zib0Y5RjlGX29GYm9GOUZfb0Zib0Y5Rl9vRmJvRjlGX29GYm9GOUY5Rl9vRmJvRjlGX29GYm9GOUY5Rl9vRmJvRjlGX29GYm9GOUZfb0Zib0Y5Rmd3LUY2Ni9RKWVuZH5wcm9jRidGVEZWRlhGO0Y+RkBGQkZERkZGSEZaRmZuRl9vRmJvRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SS1mYXN0Z2VvY291bnRHRihmKjYjSSRicG5HRig2JkkiaUdGKEkkcmVzR0YoSSVtcmVzR0YoSSVyZXMyR0YoRihGKEMnPjglLUkoZ3NlYXJjaEdGKDYkSSZzdGFydEdGKDkkQCQvJkY4NiMiIiM3Ik8iIiE+OCYtSSRtYXhHRiY2Iy1JJW1hcDJHRiY2JUkjb3BHRiYiIihGQD44Jy1JJ3NlbGVjdEdGJjYkZio2I0YyRig2JEkpb3BlcmF0b3JHRihJJmFycm93R0YoRigvJkY9NiNGT1QjRihGKDYkRjRGR0ZATy1GSTYkRkUtSSRzZXFHRiY2JC1JK2dlb2RlY291bnRHRig2JSZGUTYjOCRGPSwmIiNDIiIiJkY4NiNGZ28hIiIvRmRvO0Znby1JJW5vcHNHRiY2I0ZRRihGKEYoNyNGLg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L35" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#trace(gsearch);
+res := CodeTools:-Usage(fastgeocount(1));</Text-field>
+</Input>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">memory used=488.30MiB, alloc change=-4.00MiB, cpu time=6.95s, real time=6.30s, gc time=1.48s
+</Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEkcmVzRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JI21uR0YkNiRRIjlGJ0Y5Rjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSRyZXNHRigiIio3I0Yu</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L38" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#tracelast;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L27" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ans1 := add(i*fastgeocount(i), i = 1..nops(blueprints));</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVElYW5zMUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSSNtbkdGJDYkUSMzM0YnRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVhbnMxR0YoIiNMNyNGLg==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L34" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
