@@ -97,16 +97,167 @@
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L3" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">inputt := 
-&quot;
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">inputs := 
+&quot;#.#####
+#.....#
+#&gt;....#
+#.....#
+#...v.#
+#.....#
+#####.#
+&quot;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L19" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">inputt :=
+&quot;#.######
+#&gt;&gt;.&lt;^&lt;#
+#.&lt;..&lt;&lt;#
+#&gt;v.&gt;&lt;&gt;#
+#&lt;^v^^&gt;#
+######.#
 &quot;:</Text-field>
 </Input>
 </Group>
 <Group labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">input := Text:-ReadFile(&quot;../../AdventOfCode_inputs/AoC-2022-22-input.txt&quot; ):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">input := Text:-ReadFile(&quot;../../AdventOfCode_inputs/AoC-2022-24-input.txt&quot; ):</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L9" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font encoding="UTF-8">gridstring := (Split(TrimRight(inputt),&quot;\134n&quot;)):
+grid := Explode~(gridstring):
+w := nops(grid[1])-3;
+h := nops(grid)-3;</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L10" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">start := [0,-1];
+ending := [w, h+1];</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L11" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">locate := proc(L, m) local l; member(L, m, 'l'); return l; end proc;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L12" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">storms := table();
+
+for d in [&quot;v&quot;,&quot;^&quot;,&quot;&gt;&quot;,&quot;&lt;&quot;] do
+storms[d] := [seq( map(l-&gt;[l-2,i-2], [SearchAll(d, gridstring[i])[]])[], i=1..nops(gridstring) )];
+
+end do;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L13" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dirtable := table([&quot;v&quot;=[0,1],&quot;^&quot;=[0,-1], &quot;&gt;&quot;=[1,0], &quot;&lt;&quot;=[-1,0]]);
+
+stormpos := proc(pos, dir, time)
+global w, h, dirtable;
+    return pos + time*dirtable[dir] mod (ifelse(dir=&quot;&gt;&quot; or dir=&quot;&lt;&quot;, w+1, h+1));
+end proc:
+
+stormsnear := proc(pos, t)
+#option remember, system;
+local nx := pos[1]*~[1,1,1]+[-1,0,1];
+local ny := pos[2]*~[1,1,1]+[-1,0,1];
+
+    select(p-&gt;p[2] in ny, map(p-&gt;stormpos(p,&quot;v&quot;,t), select(p-&gt;p[1] in nx, storms[&quot;v&quot;])))[],
+    select(p-&gt;p[2] in ny, map(p-&gt;stormpos(p,&quot;^&quot;,t), select(p-&gt;p[1] in nx, storms[&quot;^&quot;])))[],
+    select(p-&gt;p[1] in nx, map(p-&gt;stormpos(p,&quot;&gt;&quot;,t), select(p-&gt;p[2] in ny, storms[&quot;&gt;&quot;])))[],
+    select(p-&gt;p[1] in nx, map(p-&gt;stormpos(p,&quot;&lt;&quot;,t), select(p-&gt;p[2] in ny, storms[&quot;&lt;&quot;])))[];
+
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">nbs := proc(i,j,t)
+#option remember, system;
+local out := [i,j]; # don't move
+    if i &lt; w and j&lt;&gt;-1 then
+       out := out, [i+1, j];
+    end if;
+    if j &lt; h or i=w then
+       out := out, [i, j+1];
+    end if;
+
+    if i &gt; 0 and j&lt;&gt;-1 then
+      out := out, [i-1, j];
+    end if;
+    if j &gt; 0 then
+       out := out, [i, j-1];
+    end if;
+
+    out := {out} minus {stormsnear([i,j],t+1)};
+    out := map(o-&gt;[o[], t+1], out);
+
+end proc:
+
+Dijkstra := proc(start, theend)
+local pq, timeto, curr, nb, newcost, pt, dim, H, period , visits; 
+uses priqueue;
+option trace;
+
+visits := 0;
+period := lcm(h+1,w+1);
+timeto := table(sparse=infinity):
+
+initialize(pq):
+insert([0,[start[],0]], pq):
+timeto[[start[],0]] := 0:
+
+while pq[0] &lt;&gt; 0 to 10 do
+   pq[0];
+   curr := extract(pq)[2];
+
+   visits := visits+1;
+   if visits mod 100 = 0 then
+       print(visits, curr);
+   end if;
+
+   if curr[1..2] = theend then
+       return timeto[theend];
+   end if;
+
+   # climb at most one
+   nb := nbs(curr[]); # non-storm neighbors at current time
+   for pt in nb do
+       newcost := timeto[curr] + 1;
+       if newcost &lt; timeto[pt] then
+           timeto[pt] := newcost;
+           H := abs(pt[1]-theend[1])+abs(pt[2]-theend[2]);
+           npt := [pt[1..2][], newcost mod period];
+           insert([-H,npt], pq);
+       end if;
+   end do;
+end do:
+
+error &quot;SNH, empty queue&quot;;
+
+end proc:</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L15" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Dijkstra( start, ending );</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L21" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">untrace(nbs); nbs( 2,1,7 )</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">untrace(stormsnear); stormsnear([0,1], 2);</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L23" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L24" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group labelreference="L25" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
