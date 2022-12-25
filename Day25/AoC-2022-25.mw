@@ -98,15 +98,123 @@
 </Group>
 <Group hide-input="false" labelreference="L3" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">inputt := 
-&quot;
+&quot;1=-0-2
+12111
+2=0=
+21
+2=01
+111
+20012
+112
+1=-1=
+1-12
+12
+1=
+122
 &quot;:</Text-field>
 </Input>
 </Group>
 <Group labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">input := Text:-ReadFile(&quot;../../AdventOfCode_inputs/AoC-2022-22-input.txt&quot; ):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">input := Text:-ReadFile(&quot;../../AdventOfCode_inputs/AoC-2022-25-input.txt&quot; ):</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L9" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">decode:=table([&quot;=&quot;=-2, &quot;-&quot;=-1, &quot;0&quot;=0, &quot;1&quot;=1, &quot;2&quot;=2]);
+code := table([-2=&quot;=&quot;, -1=&quot;-&quot;, 0=&quot;0&quot;, 1=&quot;1&quot;, 2=&quot;2&quot;]);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnZGVjb2RlRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1GNjYtUSZ0YWJsZUYnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZTLUY2Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSEZSRlQtSShtZmVuY2VkR0YkNiQtRlk2Ji1GIzYuLUYjNiYtSSNtc0dGJDYjUSIwRictRjY2LVEpJmVxdWFscztGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUkjbW5HRiQ2JEZeb0Y5RjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZSL0ZOUSwwLjMzMzMzMzNlbUYnLUYjNiYtRlxvNiNRIi1GJ0Zfby1GY282JFErJnVtaW51czA7MUYnRjlGOUZlby1GIzYmLUZcbzYjUSI9RidGX28tRmNvNiRRKyZ1bWludXMwOzJGJ0Y5RjlGZW8tRiM2Ji1GXG82I1EiMkYnRl9vLUZjbzYkRl9xRjlGOUZlby1GIzYmLUZcbzYjUSIxRidGX28tRmNvNiRGZnFGOUY5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOUY5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSdkZWNvZGVHRihLSSZUQUJMRUdGJjYjNycvUSIwRigiIiEvUSItRighIiIvUSI9RighIiMvUSIyRigiIiMvUSIxRigiIiJRKHBwcmludDBGKDcjPUYoSSZmYWxzZUdGJkVcW2wmRjNGNEY2RjdGOUY6RjxGPUY/RkA=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVElY29kZUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtRjY2LVEmdGFibGVGJ0Y5RjtGPkZARkJGREZGRkgvRktRJjAuMGVtRicvRk5GUy1GNjYtUTAmQXBwbHlGdW5jdGlvbjtGJ0Y5RjtGPkZARkJGREZGRkhGUkZULUkobWZlbmNlZEdGJDYkLUZZNiYtRiM2Li1GIzYmLUkjbW5HRiQ2JFErJnVtaW51czA7MUYnRjktRjY2LVEpJmVxdWFscztGJ0Y5RjtGPkZARkJGREZGRkhGSkZNLUkjbXNHRiQ2I1EiLUYnRjktRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSEZSL0ZOUSwwLjMzMzMzMzNlbUYnLUYjNiYtRlxvNiRRIjBGJ0Y5Rl9vLUZjbzYjRmBwRjlGZm8tRiM2Ji1GXG82JFErJnVtaW51czA7MkYnRjlGX28tRmNvNiNRIj1GJ0Y5RmZvLUYjNiYtRlxvNiRRIjFGJ0Y5Rl9vLUZjbzYjRl9xRjlGZm8tRiM2Ji1GXG82JFEiMkYnRjlGX28tRmNvNiNGZnFGOS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjkvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVjb2RlR0YoS0kmVEFCTEVHRiY2IzcnLyEiIlEiLUYoLyIiIVEiMEYoLyEiI1EiPUYoLyIiIlEiMUYoLyIiI1EiMkYoUShwcHJpbnQwRig3Iz1GKEkmZmFsc2VHRiZFXFtsJkYzRjRGNkY3RjlGOkY8Rj1GP0ZA</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L10" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font encoding="UTF-8">nums := Split(TrimRight(input),&quot;\134n&quot;);</Font></Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVElbnVtc0YnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2ZnctSSNtc0dGJDYjUTIxPTEyMD0yMjIyMi09MTAtPUYnLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRlU2I1EpMS0tMjItPS1GJ0ZYLUZVNiNRIzIxRidGWC1GVTYjUTUxPTAyMjI9LTE9LTAtLTIyMD0wMkYnRlgtRlU2I1EnMTIyMTAyRidGWC1GVTYjUTEyMi0tPTIwPT0yPT09MjAxRidGWC1GVTYjUS0xMDAtMS0wMT0wLTFGJ0ZYLUZVNiNRMTIwMjAwLTI9PTIyMDEyMC1GJ0ZYLUZVNiNRLzIyMjAtMjIwMD0wMDA9RidGWC1GVTYjUS0xPT0wMDI9MjIxLTJGJ0ZYLUZVNiNRKzItLTIyMS0yMj1GJ0ZYLUZVNiNRMjEwMjI9MTIxPTEtMjI9LTAxRidGWC1GVTYjUTIyPTE9MS0xPTAyLT0wMj0yPUYnRlgtRlU2I1ErMS0yMTExMj0wMkYnRlgtRlU2I1EqMj0xLTIyMDIxRidGWC1GVTYjUTExLS0tPS0yMjE9LTIyMTIyRidGWC1GVTYjUSYxMDAyMEYnRlgtRlU2I1EoMT0tLTEwMUYnRlgtRlU2I1EuMT0xMj0wMi0xLS0xMkYnRlgtRlU2I1EwMT0wLT0xMDAyMDIwLTI9RidGWC1GVTYjUTMxMjA9MT09MjAxMTAyPT0yPT1GJ0ZYLUZVNiNRMjI9PS09MDEyMDExMj0yLT0tRidGWC1GVTYjUSYxLS0tMUYnRlgtRlU2I1ExMTI9Mi0tMDItMDA9PS0yMkYnRlgtRlU2I1EzMTI9PTEtPTAtMj0wLS0xMS0tRidGWC1GVTYjUSwxPTEwPTAtMTIyMUYnRlgtRlU2I1EpMT0yMDEtMC1GJ0ZYLUZVNiNRIzIyRidGWC1GVTYjUTMxMC0wPTIxLTItMS0yLT0yMTFGJ0ZYLUZVNiNRLzE9MS0tMTI9PTA9LS0xRidGWC1GVTYjUS8yPS0xMDIyPTE9LTEwLUYnRlgtRlU2I1EpMTItMDItMi1GJ0ZYLUZVNiNRKzE9LTE9MDAtLS1GJ0ZYLUZVNiNRLTE9MTAwMTIwPTEwMUYnRlgtRlU2I1EnMTEyPTAxRidGWC1GVTYjUTEyMC0yMj0wMC09MT0xPTEwRidGWC1GVTYjUTAyMDAtLT0wLTIyMTEwMT1GJ0ZYLUZVNiNRLDEwLTI9MDE9LTIwRidGWC1GVTYjUSgxMD0xMT0xRidGWC1GVTYjUSYyMC0xLUYnRlgtRlU2I1EyMj0wMTItMDAyLTAyLTEyMjFGJ0ZYLUZVNiNRLjE9PTE9MS0wMTIxMDBGJ0ZYLUZVNiNRLzEwPTIyMTIwMi0wLTAtRidGWC1GVTYjUSgxLTAxMjEtRidGWC1GVTYjUSoyPT0xMTAwLT1GJ0ZYLUZVNiNRLDEwMj0wMjI9MjAyRidGWC1GVTYjUSUyPTItRidGWC1GVTYjUS0yMS0yPTEyLTIyLTFGJ0ZYLUZVNiNRJzEtMjEwMEYnRlgtRlU2I1EsMS0yMDAxMDE9PTBGJ0ZYLUZVNiNRNDI9PTAyMDAtMTIwMTItPTE9MDJGJ0ZYLUZVNiNRLjE9MTAxMC0yPTIyPTJGJ0ZYLUZVNiNRNDEtMj0tMTItMi0yPTExMj0xMjBGJ0ZYLUZVNiNRJjE9LT0tRidGWC1GVTYjUSQyLT1GJ0ZYLUZVNiNRLjEwMD0wLTEtMT0wMDBGJ0ZYLUZVNiNRMzExPTEtPTItLTAwPTA9Mi09MUYnRlgtRlU2I1EyMTIyMTEyMDEyMj0xMTExMC1GJ0ZYLUZVNiNRLDExMT0xMC0wMDI9RidGWC1GVTYjUSkyMD0tPTIwMEYnRlgtRlU2I1EmMj09MjFGJ0ZYLUZVNiNRMTE9LS0yPS09Mi0xMDIyMTFGJ0ZYLUZVNiNRKzIwPTE9LTA9MT1GJ0ZYLUZVNiNRIzEyRidGWC1GVTYjUS8yMDI9LTAtPTEyMjAtMEYnRlgtRlU2I1EtMT0wMTEyPTEtPS0xRidGWC1GVTYjUTIyMS09LT09PTA9LTEyMjAwMEYnRlgtRlU2I1EjMT1GJ0ZYLUZVNiNRMTExMjAxMC0xMTIyMT0tMDBGJ0ZYLUZVNiNRMTExMi0yPT0xMDI9Mi0xPTFGJ0ZYLUZVNiNRJzE9PS0wPUYnRlgtRlU2I1EsMT0wMS0xMS0yMTFGJ0ZYLUZVNiNRMzIxPS0xLTIwLS0yPTIwMjEyMkYnRlgtRlU2I1ElMT0wMUYnRlgtRlU2I1EmMjAyMjFGJ0ZYLUZVNiNRJDEwMEYnRlgtRlU2I1EwMTA9MjItMT0tMTEyMS0yRidGWC1GVTYjUSYyLTA9LUYnRlgtRlU2I1EwMTAxMDEyLTIwMD0wMTA9RidGWC1GVTYjUSoxMDExPTAwMTFGJ0ZYLUZVNiNRLDEtMDIwMj0wLTExRidGWC1GVTYjUSgxMDE9PTEwRidGWC1GVTYjUSQxMD1GJ0ZYLUZVNiNRKzEwMTExLTE9LTBGJ0ZYLUZVNiNRLDExMTI9MDEwMT0tRidGWC1GVTYjUS8xMT0wPS0xMTExLTAwMEYnRlgtRlU2I1EmMTI9MTFGJ0ZYLUZVNiNRKzExMDIyMjI9MjBGJ0ZYLUZVNiNRLTI9MD0tLT09MDIyLUYnRlgtRlU2I1EmMTEyMjJGJ0ZYLUZVNiNRJjIxMDA9RidGWC1GVTYjUSUxPS0wRidGWC1GVTYjUS4xMi0xMS0yPS0yMjItRidGWC1GVTYjUS4xLTEwLTAxMj0yMS0wRidGWC1GVTYjUSUxLTI9RidGWC1GVTYjUSQxMTJGJ0ZYLUZVNiNRJzExMT0yMEYnRlgtRlU2I1EoMTIyMT0tMkYnRlgtRlU2I1EvMT09PTE9PTAwMTA9MC1GJ0ZYLUZVNiNRLDEtPTEtPT0tPTIwRicvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRj1GOUY5LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJ0Y5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVudW1zR0YoN2BxUTIxPTEyMD0yMjIyMi09MTAtPUYoUSkxLS0yMi09LUYoUSMyMUYoUTUxPTAyMjI9LTE9LTAtLTIyMD0wMkYoUScxMjIxMDJGKFExMjItLT0yMD09Mj09PTIwMUYoUS0xMDAtMS0wMT0wLTFGKFExMjAyMDAtMj09MjIwMTIwLUYoUS8yMjIwLTIyMDA9MDAwPUYoUS0xPT0wMDI9MjIxLTJGKFErMi0tMjIxLTIyPUYoUTIxMDIyPTEyMT0xLTIyPS0wMUYoUTIyPTE9MS0xPTAyLT0wMj0yPUYoUSsxLTIxMTEyPTAyRihRKjI9MS0yMjAyMUYoUTExLS0tPS0yMjE9LTIyMTIyRihRJjEwMDIwRihRKDE9LS0xMDFGKFEuMT0xMj0wMi0xLS0xMkYoUTAxPTAtPTEwMDIwMjAtMj1GKFEzMTIwPTE9PTIwMTEwMj09Mj09RihRMjI9PS09MDEyMDExMj0yLT0tRihRJjEtLS0xRihRMTEyPTItLTAyLTAwPT0tMjJGKFEzMTI9PTEtPTAtMj0wLS0xMS0tRihRLDE9MTA9MC0xMjIxRihRKTE9MjAxLTAtRihRIzIyRihRMzEwLTA9MjEtMi0xLTItPTIxMUYoUS8xPTEtLTEyPT0wPS0tMUYoUS8yPS0xMDIyPTE9LTEwLUYoUSkxMi0wMi0yLUYoUSsxPS0xPTAwLS0tRihRLTE9MTAwMTIwPTEwMUYoUScxMTI9MDFGKFExMjAtMjI9MDAtPTE9MT0xMEYoUTAyMDAtLT0wLTIyMTEwMT1GKFEsMTAtMj0wMT0tMjBGKFEoMTA9MTE9MUYoUSYyMC0xLUYoUTIyPTAxMi0wMDItMDItMTIyMUYoUS4xPT0xPTEtMDEyMTAwRihRLzEwPTIyMTIwMi0wLTAtRihRKDEtMDEyMS1GKFEqMj09MTEwMC09RihRLDEwMj0wMjI9MjAyRihRJTI9Mi1GKFEtMjEtMj0xMi0yMi0xRihRJzEtMjEwMEYoUSwxLTIwMDEwMT09MEYoUTQyPT0wMjAwLTEyMDEyLT0xPTAyRihRLjE9MTAxMC0yPTIyPTJGKFE0MS0yPS0xMi0yLTI9MTEyPTEyMEYoUSYxPS09LUYoUSQyLT1GKFEuMTAwPTAtMS0xPTAwMEYoUTMxMT0xLT0yLS0wMD0wPTItPTFGKFEyMTIyMTEyMDEyMj0xMTExMC1GKFEsMTExPTEwLTAwMj1GKFEpMjA9LT0yMDBGKFEmMj09MjFGKFExMT0tLTI9LT0yLTEwMjIxMUYoUSsyMD0xPS0wPTE9RihRIzEyRihRLzIwMj0tMC09MTIyMC0wRihRLTE9MDExMj0xLT0tMUYoUTIyMS09LT09PTA9LTEyMjAwMEYoUSMxPUYoUTExMTIwMTAtMTEyMjE9LTAwRihRMTExMi0yPT0xMDI9Mi0xPTFGKFEnMT09LTA9RihRLDE9MDEtMTEtMjExRihRMzIxPS0xLTIwLS0yPTIwMjEyMkYoUSUxPTAxRihRJjIwMjIxRihRJDEwMEYoUTAxMD0yMi0xPS0xMTIxLTJGKFEmMi0wPS1GKFEwMTAxMDEyLTIwMD0wMTA9RihRKjEwMTE9MDAxMUYoUSwxLTAyMDI9MC0xMUYoUSgxMDE9PTEwRihRJDEwPUYoUSsxMDExMS0xPS0wRihRLDExMTI9MDEwMT0tRihRLzExPTA9LTExMTEtMDAwRihRJjEyPTExRihRKzExMDIyMjI9MjBGKFEtMj0wPS0tPT0wMjItRihRJjExMjIyRihRJjIxMDA9RihRJTE9LTBGKFEuMTItMTEtMj0tMjIyLUYoUS4xLTEwLTAxMj0yMS0wRihRJTEtMj1GKFEkMTEyRihRJzExMT0yMEYoUSgxMjIxPS0yRihRLzE9PT0xPT0wMDEwPTAtRihRLDEtPTEtPT0tPTIwRig3I0Yu</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L11" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">snafutodec := proc(s)
+local out, i, sr;
+out := 0;
+sr := Reverse(s);
+for i to length(s) do
+   out += decode[sr[i]] * 5^(i-1);
+end do;
+return out;
+end proc:</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L12" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">snafutodec(nums[1]);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEtMTAwMDI0NDAxOTkzRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn">Ii0kKj5TQys1</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L13" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dectosnafu := proc(d)
+local i, tmp,j;
+local b5 := Array(convert(d, base, 5));
+for i to numelems(b5) do
+    if b5[i] &lt; 0 then next; end if;
+
+    if mods(b5[i],5) &lt; 0 then
+        tmp := b5[i];
+        b5[i] := mods(tmp,5);
+        # carry the one
+        j := i+1;
+        while true do
+            if numelems(b5)&lt;j then
+                b5(j) := 0;
+            end if;
+
+            if b5[j] &gt; 3 then
+                b5[j] := mods(b5[j]+1,5);
+                j := j+1;
+            else
+                b5[j] += 1;
+                break;
+            end if;
+
+        end do;
+    end if;
+end do;
+local out := convert(b5, list);
+Reverse(Join(map(e-&gt;code[e], out),&quot;&quot;));
+end proc:</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L14" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dectosnafu(1747);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbXNHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2I1EnMT0tMC0yRic=">UScxPS0wLTI2Ig==</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L15" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">seq(dectosnafu(i), i in [seq(1..10),15,20,2022,12345,314159265]);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzZALUkjbXNHRiQ2I1EiMUYnLUkjbW9HRiQ2LVEoJmNvbW1hO0YnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdRJXRydWVGJy8lKXN0cmV0Y2h5R0Y4LyUqc3ltbWV0cmljR0Y4LyUobGFyZ2VvcEdGOC8lLm1vdmFibGVsaW1pdHNHRjgvJSdhY2NlbnRHRjgvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYjUSIyRidGLy1GLDYjUSMxPUYnRi8tRiw2I1EjMS1GJ0YvLUYsNiNRIzEwRidGLy1GLDYjUSMxMUYnRi8tRiw2I1EjMTJGJ0YvLUYsNiNRIzI9RidGLy1GLDYjUSMyLUYnRi8tRiw2I1EjMjBGJ0YvLUYsNiNRJDE9MEYnRi8tRiw2I1EkMS0wRidGLy1GLDYjUScxPTExLTJGJ0YvLUYsNiNRKDEtMC0tLTBGJ0YvLUYsNiNRLjExMjEtMTExMC0xPTBGJ0Yz">NjFRIjE2IlEiMkYkUSMxPUYkUSMxLUYkUSMxMEYkUSMxMUYkUSMxMkYkUSMyPUYkUSMyLUYkUSMyMEYkUSQxPTBGJFEkMS0wRiRRJzE9MTEtMkYkUSgxLTAtLS0wRiRRLjExMjEtMTExMC0xPTBGJA==</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L16" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dectosnafu( add( snafutodec(nums[i]), i=1..nops(nums)) );</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbXNHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2I1E1MTIyLTEyPT0wLTAxPTAwLTA9MDJGJw==">UTUxMjItMTI9PTAtMDE9MDAtMD0wMjYi</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L19" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">&quot;122-12==0-01=00-0=02&quot;</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbXNHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2I1E1MTIyLTEyPT0wLTAxPTAwLTA9MDJGJw==">UTUxMjItMTI9PTAtMDE9MDAtMD0wMjYi</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L20" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">dectosnafu(2023);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbXNHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2I1EnMT0xMTA9Ric=">UScxPTExMD02Ig==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L21" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
